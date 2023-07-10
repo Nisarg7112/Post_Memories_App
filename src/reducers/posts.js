@@ -1,6 +1,5 @@
 import { FETCH_ALL, CREATE, UPDATE, DELETE, LIKE } from '../constants/actionTypes';
 
-
 // actions which are performed in redux store
 export default (posts = [], action) => {
   switch (action.type) {

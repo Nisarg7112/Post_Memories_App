@@ -3,11 +3,10 @@ import * as api from '../api/index.js';
 
 export const getPosts = () => async (dispatch) => {
   try {
-
-    // this will call an api(backend) to fetch all posts from mongodb 
+    // this will call an api(backend) to fetch all posts from mongodb
     const { data } = await api.fetchPosts();
 
-    // this dispatch will send data along with the specified action to redux store 
+    // this dispatch will send data along with the specified action to redux store
     dispatch({ type: FETCH_ALL, payload: data });
   } catch (error) {
     console.log(error);

@@ -6,9 +6,8 @@ import Post from './Post/Post';
 import useStyles from './styles';
 
 const Posts = ({ setCurrentId }) => {
-
   // useSelector is react-redux hook which will find the posts property in redux store
-  // and assign it to posts variable here 
+  // and assign it to posts variable here
   const posts = useSelector((state) => state.posts);
   const classes = useStyles();
 
